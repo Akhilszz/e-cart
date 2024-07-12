@@ -1,0 +1,235 @@
+/* Navbar */
+.main-container {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo {
+    flex: 1;
+}
+
+.search-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.nav-search {
+    width: 100%;
+    max-width: 600px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    outline: none;
+}
+
+.search-results {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.search-item:last-child {
+    border-bottom: none;
+}
+
+.search-item:hover {
+    background-color: #f9f9f9;
+}
+
+.search-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.menu-nav {
+    flex: 3;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-list {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+    color: #333;
+}
+
+.menu-list:hover {
+    border-bottom: 2px solid red;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 150px;
+    text-align: center;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f9f9f9;
+}
+
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+.btn-nav {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background: none;
+    color: #333;
+    transition: color 0.3s ease;
+    margin-left: 10px;
+    /* Add margin between buttons */
+}
+
+.btn-nav:hover {
+    color: red;
+}
+
+.cart-container {
+    position: relative;
+}
+
+.cart-icon {
+    position: relative;
+    padding: 10px;
+}
+
+.cart-counter {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Login Button Style */
+.login-btn {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #555;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .menu-nav {
+        display: none;
+    }
+
+    .menu-nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1000;
+    }
+
+    .menu-nav .menu-list {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+    }
+
+    .dropdown.show .dropdown-content {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 10px;
+        margin-left: 10px;
+        /* Add margin between buttons */
+    }
+
+    .search-container {
+        flex: 5;
+        margin-right: 20px;
+        /* Adjust width of search container */
+    }
+
+    .nav-search {
+        max-width: 300px;
+        /* Reduce width on small screens */
+    }
+
+}
+
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none;
+    }
+}

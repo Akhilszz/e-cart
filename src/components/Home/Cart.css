@@ -1,0 +1,130 @@
+.new-main-cart {
+    background-color: #f4f4f4;
+}
+
+.new-cart-content {
+    display: flex;
+    flex-direction: column;
+    /* Ensure content stacks vertically */
+    align-items: center;
+    /* Center align items horizontally */
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.new-cart-items {
+    width: 100%;
+    max-width: 800px;
+    /* Limit items width */
+    margin-bottom: 20px;
+    /* Adjust margin */
+}
+
+.new-cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.new-cart-item-image {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.new-cart-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.new-cart-item-details {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-cart-item-details h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.new-cart-item-details p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.new-remove-btn {
+    background: none;
+    border: none;
+    color: #d9534f;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.new-quantity-control {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.new-quantity-btn {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.new-quantity-display {
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.new-item-price {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    margin-left: auto;
+}
+
+.new-total-amount-card {
+    width: 100%;
+    max-width: 800px;
+    /* Limit width */
+    margin: 0 auto;
+    /* Center align on large screens */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    /* Center align text */
+    margin-top: 20px;
+    /* Adjust margin */
+}
+
+.footer-cart {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

@@ -1,0 +1,124 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+}
+
+.footer__navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__navigation ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer__navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__navigation ul li a:hover {
+    color: #ffd700;
+    /* Change color on hover */
+}
+
+.footer__social ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer__social ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__social ul li a:hover {
+    color: #ffd700;
+    /* Change color on hover */
+}
+
+.footer__legal {
+    text-align: right;
+    font-size: 12px;
+}
+
+.footer__legal p {
+    margin: 0;
+}
+
+.footer__legal p:first-child {
+    margin-bottom: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: flex-start;
+        /* padding: px; */
+    }
+
+    .footer__navigation,
+    .footer__social,
+    .footer__legal {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+
+    .footer__navigation ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer__legal {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 5px 0;
+        /* Reduce padding */
+        font-size: 10px;
+        /* Reduce font size */
+    }
+
+    .footer__container {
+        padding: 0 5px;
+        /* Reduce horizontal padding */
+    }
+
+    .footer__social ul li a {
+        font-size: 10px;
+        /* Reduce icon size */
+    }
+
+    .footer__legal p {
+        font-size: 10px;
+        /* Reduce legal text size */
+    }
+}
